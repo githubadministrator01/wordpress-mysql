@@ -16,8 +16,8 @@ services:
      depends_on:
        - db
      image: wordpress:latest
-     deploy:
-       replicas: 2
+     #deploy:                         #Optional - uncomment if you use swarm
+       #replicas: 2
      ports:
        - "8000:80"
      restart: always
